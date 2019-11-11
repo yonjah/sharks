@@ -9,10 +9,34 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1bqGR5jlj9KNnV0lKEillEZjL-nD_tdyA'
-export_file_name = 'export.pkl'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1-EArdOtskQJPQgKx3lZWe0w0ZzPNKXbX'
+export_file_name = 'spi_export.pkl'
 
-classes = ['yakko', 'wakko', 'dot']
+classes = [
+    'Aetomylaeus bovinus',
+    'Alopias superciliosus',
+    'Carcharhinus obscurus',
+    'Carcharhinus plumbeus',
+    'Centrophorus granulosus',
+    'Dasyatis chrysonota',
+    'Dasyatis pastinaca',
+    'Galeus melastomus',
+    'Glaucostegus cemiculus',
+    'Gymnura altavela',
+    'Himantura uarnak',
+    'Isurus oxyrinchus',
+    'Mobula mobular',
+    'Mustelus mustelus',
+    'Prionace glauca',
+    'Raja clavata',
+    'Rhinobatos rhinobatos',
+    'Rhinoptera marginata',
+    'Sphyrna zygaena',
+    'Squalus acanthias',
+    'Taeniurops grabatus',
+    'Torpedo marmorata',
+    'Torpedo torpedo'
+]
 path = Path(__file__).parent
 
 app = Starlette()
